@@ -9,7 +9,7 @@ WORKDIR /usr/local/app
 COPY package*.json .
 
 # Install all the dependencies
-RUN npm install
+RUN npm ci
 
 # Add the source code to app
 COPY ./ /usr/local/app/
